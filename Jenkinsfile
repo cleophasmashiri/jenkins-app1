@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'timbru31/node-chrome' // Use a Node.js image
+            image 'cypress/browsers' // Use a Node.js image
             args '-p 3002:80' // Map the app's port to host
         }
     }
