@@ -1,4 +1,4 @@
-FROM node:20.11
+FROM cypress/base:12.16.1
 WORKDIR /app
 COPY package*.json ./
 RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list
