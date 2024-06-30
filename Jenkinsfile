@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:20.11' // Use a Node.js image
+            image 'timbru31/node-chrome' // Use a Node.js image
             args '-p 3002:80' // Map the app's port to host
         }
     }
