@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:20.11' // Use a Node.js image
+            image 'cypress/base:12.16.1' // Use a Node.js image
             args '-p 3002:80' // Map the app's port to host
         }
     }
